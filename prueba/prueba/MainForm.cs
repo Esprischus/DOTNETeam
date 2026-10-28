@@ -37,7 +37,9 @@ namespace prueba
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Hola xd");
+			Poke2 pok2 = new Poke2();
+			pok2.Show();
+			this.Hide();
 		}
 		
 		void PictureBox2Click(object sender, EventArgs e)

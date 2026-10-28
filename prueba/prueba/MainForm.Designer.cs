@@ -115,7 +115,7 @@ namespace prueba
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 45);
 			this.button1.TabIndex = 4;
-			this.button1.Text = "Saludo cordial";
+			this.button1.Text = "Ver Otro";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
