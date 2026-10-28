@@ -29,5 +29,15 @@ namespace prueba
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void SalirToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Hola xd");
+		}
 	}
 }
