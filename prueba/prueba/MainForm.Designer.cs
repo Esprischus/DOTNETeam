@@ -37,27 +37,122 @@ namespace prueba
 		private void InitializeComponent()
 		{
 			this.lblp = new System.Windows.Forms.Label();
+			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+			this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pedroxdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.button1 = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.menuStrip2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lblp
 			// 
 			this.lblp.Font = new System.Drawing.Font("Perpetua Titling MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblp.Location = new System.Drawing.Point(68, 13);
+			this.lblp.Location = new System.Drawing.Point(12, 25);
 			this.lblp.Name = "lblp";
 			this.lblp.Size = new System.Drawing.Size(100, 23);
 			this.lblp.TabIndex = 0;
 			this.lblp.Text = "prueba";
+			// 
+			// menuStrip1
+			// 
+			this.menuStrip1.Location = new System.Drawing.Point(0, 24);
+			this.menuStrip1.Name = "menuStrip1";
+			this.menuStrip1.Size = new System.Drawing.Size(284, 24);
+			this.menuStrip1.TabIndex = 1;
+			this.menuStrip1.Text = "menuStrip1";
+			// 
+			// menuStrip2
+			// 
+			this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.archivoToolStripMenuItem,
+									this.pedroxdToolStripMenuItem});
+			this.menuStrip2.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip2.Name = "menuStrip2";
+			this.menuStrip2.Size = new System.Drawing.Size(284, 24);
+			this.menuStrip2.TabIndex = 2;
+			this.menuStrip2.Text = "menuStrip2";
+			// 
+			// archivoToolStripMenuItem
+			// 
+			this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+									this.salirToolStripMenuItem});
+			this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+			this.archivoToolStripMenuItem.Text = "&Archivo";
+			// 
+			// salirToolStripMenuItem
+			// 
+			this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+			this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+			this.salirToolStripMenuItem.Text = "&Salir";
+			this.salirToolStripMenuItem.Click += new System.EventHandler(this.SalirToolStripMenuItemClick);
+			// 
+			// pedroxdToolStripMenuItem
+			// 
+			this.pedroxdToolStripMenuItem.Name = "pedroxdToolStripMenuItem";
+			this.pedroxdToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+			this.pedroxdToolStripMenuItem.Text = "Pedroxd";
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Location = new System.Drawing.Point(12, 139);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(113, 110);
+			this.pictureBox1.TabIndex = 3;
+			this.pictureBox1.TabStop = false;
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(197, 204);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 45);
+			this.button1.TabIndex = 4;
+			this.button1.Text = "button1";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Poor Richard", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(13, 52);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(259, 43);
+			this.label1.TabIndex = 5;
+			this.label1.Text = "Menu principal de algo que no tengo idea pero que es en equipo ekisde";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.button1);
+			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.lblp);
+			this.Controls.Add(this.menuStrip1);
+			this.Controls.Add(this.menuStrip2);
+			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "prueba";
+			this.menuStrip2.ResumeLayout(false);
+			this.menuStrip2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.ToolStripMenuItem pedroxdToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip2;
+		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.Label lblp;
 	}
 }
