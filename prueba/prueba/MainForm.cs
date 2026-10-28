@@ -39,5 +39,10 @@ namespace prueba
 		{
 			MessageBox.Show("Hola xd");
 		}
+		
+		void PictureBox2Click(object sender, EventArgs e)
+		{
+			MessageBox.Show(" Pokemon tipo electrico \n Nivel: 14 \n Status: 200 HP / 15 DEF ","Pikachu");
+		}
 	}
 }
